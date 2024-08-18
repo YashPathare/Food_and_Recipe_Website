@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DilSeDelicious</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="pizza_icon.png">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container {
+            flex: 1;
+            margin-right: 20px;
+            /* Adjust the spacing between the image and text */
+        }
+
+        .text-container {
+            flex: 1;
+        }
+        body
+        {
+            background-color: wheat;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image-container img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <img src="pizza_icon.png" style="width=" 30" height="24">
+            <a class="navbar-brand" href="aboutus.html">DilSeDelicious</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chef.html">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                    Sign In
+                </button>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#LogInModal">
+                    Log In
+                </button>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#ShareModal">
+                    Wanna share a Recipe?
+                </button>
+            </div>
+        </div>
+    </nav>
+    <p>
+    <h1 class="text-success" style="text-align: center;">Gajar Halwa</h1>
+    </p>
+    <div class="container">
+        <div class="image-container">
+            <img src="gajar_halwa.jpg" alt="Gajar ka Halwa" class="img-fluid">
+        </div>
+        <div class="text-container">
+            <p>
+            <h3 class="text-success">Ingredients:</h3>
+            </p>
+            <p>
+            <ul>
+                <li>500 grams carrots (about 4-5 medium-sized carrots), peeled and grated</li>
+        <li>2 cups whole milk</li>
+        <li>1/4 cup sugar (adjust to taste)</li>
+        <li>2 tablespoons ghee (clarified butter)</li>
+        <li>1/4 teaspoon cardamom powder</li>
+        <li>A pinch of saffron strands (optional)</li>
+        <li>Chopped nuts (such as almonds or pistachios) for garnish</li>
+            </ul>
+            </p>
+            <p>
+            <h3 class="text-success">Procedure:</h3>
+            </p>
+            <p>
+            <ol>
+                <li><strong>Grate the Carrots:</strong>
+                    <ul>
+                        <li>Peel the carrots and grate them using a grater. You can also use a food processor for quick shredding.</li>
+                    </ul>
+                </li>
+                <li><strong>Cook the Carrots:</strong>
+                    <ul>
+                        <li>Heat ghee in a heavy-bottomed pan or kadhai over medium heat.</li>
+                        <li>Add the grated carrots to the pan and sauté them in ghee for 5-7 minutes until they turn slightly soft.</li>
+                    </ul>
+                </li>
+                <li><strong>Add Milk:</strong>
+                    <ul>
+                        <li>Pour the whole milk into the pan with the grated carrots.</li>
+                        <li>Stir well and let it come to a simmer.</li>
+                    </ul>
+                </li>
+                <li><strong>Simmer:</strong>
+                    <ul>
+                        <li>Reduce the heat to low and let the carrots cook in milk until the milk reduces and thickens, and the carrots become soft. This can take about 30-40 minutes, stirring occasionally to prevent sticking.</li>
+                    </ul>
+                </li>
+                <li><strong>Add Sugar and Flavorings:</strong>
+                    <ul>
+                        <li>Once the carrots are cooked and the milk has thickened, add sugar to the mixture.</li>
+                        <li>Also, add cardamom powder and saffron strands (if using) for flavor. Stir well to combine.</li>
+                    </ul>
+                </li>
+                <li><strong>Continue Cooking:</strong>
+                    <ul>
+                        <li>Cook the mixture for another 10-15 minutes until the sugar is fully dissolved, and the halwa reaches a thick consistency. Keep stirring occasionally.</li>
+                    </ul>
+                </li>
+                <li><strong>Garnish and Serve:</strong>
+                    <ul>
+                        <li>Once the gajar halwa is ready, garnish it with chopped nuts of your choice (such as almonds or pistachios).</li>
+                        <li>Serve the gajar halwa warm or cold, according to your preference.</li>
+                    </ul>
+                </li>
+            </ol>
+            </p>
+        </div>
+    </div>
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#SignUpModal" data-bs-dismiss="modal"> Sign Up</a></p>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ShareModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Share your Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Share your Recipe</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 DilSeDelicious. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

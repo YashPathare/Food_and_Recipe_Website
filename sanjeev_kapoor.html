@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="pizza_icon.png">
+    <title>DilSeDelicious</title>
+    <style>
+        .a
+        {
+            height: 500px;
+            width: 500px;
+            display: block;
+            margin: auto;
+        }
+        p
+        {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+        body
+        {
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <img src="pizza_icon.png" style="width=" 30" height="24">
+            <a class="navbar-brand" href="aboutus.html">DilSeDelicious</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chef.html">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                    Sign In
+                </button>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#LogInModal">
+                    Log In
+                </button>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#ShareModal">
+                    Wanna share a Recipe?
+                </button>
+            </div>
+        </div>
+    </nav>
+    <p>
+        <h1>
+            Sanjeev Kapoor
+        </h1>
+        <img class="a" src="sanjeev_kapoor.jpeg">
+        <p>
+            
+            Sanjeev Kapoor is an eminent Indian chef, entrepreneur, and television personality known for his significant contributions to the culinary world. Born on April 10, 1964, in Ambala, India, Kapoor's journey to becoming a culinary icon began with his passion for cooking from a young age.
+        </p>
+        <p>
+            Kapoor pursued formal culinary education at the Institute of Hotel Management in Catering Technology & Applied Nutrition, Mumbai. Following his training, he gained invaluable experience working at various prestigious hotels and restaurants in India and abroad, honing his culinary skills and expanding his repertoire.
+        </p>
+        <p>
+            In 1993, Sanjeev Kapoor's culinary prowess reached new heights with the launch of his television show "Khana Khazana," which became immensely popular and made him a household name across India. The show showcased Kapoor's expertise in traditional Indian cuisine and innovative cooking techniques, inspiring millions of viewers to explore the world of cooking.
+        </p>
+        <p>
+            Alongside his television career, Kapoor has authored numerous cookbooks, sharing his extensive knowledge of Indian cuisine with enthusiasts worldwide. His books, including "Khazana of Indian Recipes," "Low Calorie Vegetarian Cookbook," and "Simply Indian," have received widespread acclaim for their accessible recipes and comprehensive approach to cooking.
+        </p>
+        <p>
+            In addition to his media ventures, Kapoor is a successful entrepreneur, having established several restaurants and culinary ventures globally. His restaurant chain, "The Yellow Chilli," offers a diverse menu featuring his signature dishes, while his culinary academy, "Sanjeev Kapoor's FoodFood," provides professional training to aspiring chefs.
+        </p>
+        <p>
+            Sanjeev Kapoor's contributions to the culinary industry have earned him numerous accolades and honors, including the Padma Shri, one of India's highest civilian awards, for his outstanding contribution to the culinary field. He continues to inspire and educate food enthusiasts worldwide through his television shows, cookbooks, and culinary ventures, solidifying his legacy as one of India's most influential chefs.
+        </p>
+    </p>
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#SignUpModal" data-bs-dismiss="modal"> Sign Up</a></p>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ShareModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Share your Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Share your Recipe</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 DilSeDelicious. All rights reserved.</span>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

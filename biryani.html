@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DilSeDelicious</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="pizza_icon.png">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-container {
+            flex: 1;
+            margin-right: 20px;
+            /* Adjust the spacing between the image and text */
+        }
+
+        .text-container {
+            flex: 1;
+        }
+        body
+        {
+            background-color: wheat;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image-container img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <img src="pizza_icon.png" style="width=" 30" height="24">
+            <a class="navbar-brand" href="aboutus.html">DilSeDelicious</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chef.html">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                    Sign In
+                </button>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#LogInModal">
+                    Log In
+                </button>
+                <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#ShareModal">
+                    Wanna share a Recipe?
+                </button>
+            </div>
+        </div>
+    </nav>
+    <p>
+    <h1 class="text-primary" style="text-align: center;">Biryani</h1>
+    </p>
+    <div class="container">
+        <div class="image-container">
+            <img src="biryani2.jpg" alt="Biryani" class="img-fluid">
+        </div>
+        <div class="text-container">
+            <p>
+            <h3 class="text-primary">Ingredients:</h3>
+            </p>
+            <p>
+            <ul>
+                <li>2 cups basmati rice</li>
+        <li>500g chicken (cut into pieces)</li>
+        <li>2 onions (sliced)</li>
+        <li>1 tomato (chopped)</li>
+        <li>2-3 green chilies (slit lengthwise)</li>
+        <li>1/4 cup plain yogurt</li>
+        <li>2 tablespoons ginger-garlic paste</li>
+        <li>1/2 cup chopped coriander leaves (cilantro)</li>
+        <li>1/2 cup chopped mint leaves</li>
+        <li>1/4 cup cooking oil or ghee (clarified butter)</li>
+        <li>Whole spices (2 bay leaves, 4-5 cloves, 4-5 green cardamom pods, 2-inch cinnamon stick)</li>
+        <li>1 teaspoon cumin seeds</li>
+        <li>1 teaspoon turmeric powder</li>
+        <li>1 tablespoon biryani masala</li>
+        <li>Salt to taste</li>
+        <li>Saffron strands soaked in warm milk (for garnish, optional)</li>
+            </ul>
+            </p>
+            <p>
+            <h3 class="text-primary">Procedure:</h3>
+            </p>
+            <p>
+            <ol>
+                <li><strong>Marinate the Chicken:</strong>
+                    <ul>
+                        <li>In a bowl, mix the chicken pieces with yogurt, ginger-garlic paste, chopped coriander leaves, chopped mint leaves, green chilies, turmeric powder, biryani masala, and salt. Let it marinate for at least 30 minutes.</li>
+                    </ul>
+                </li>
+                <li><strong>Prepare the Rice:</strong>
+                    <ul>
+                        <li>Wash the basmati rice thoroughly until the water runs clear. Soak the rice in water for 30 minutes.</li>
+                        <li>In a large pot, bring water to a boil. Add salt and the soaked rice. Cook the rice until it is 70-80% cooked. Drain the water and set aside.</li>
+                    </ul>
+                </li>
+                <li><strong>Cook the Chicken:</strong>
+                    <ul>
+                        <li>Heat oil or ghee in a large pot. Add the sliced onions and sauté until golden brown.</li>
+                        <li>Add the whole spices and cumin seeds. Sauté for a minute until fragrant.</li>
+                        <li>Add the marinated chicken pieces along with chopped tomatoes. Cook until the chicken is tender and cooked through. Adjust salt and spices according to taste.</li>
+                    </ul>
+                </li>
+                <li><strong>Layering:</strong>
+                    <ul>
+                        <li>In a separate heavy-bottomed pot or a deep baking dish, layer half of the cooked rice.</li>
+                        <li>Spread the cooked chicken mixture evenly over the rice layer.</li>
+                        <li>Top with the remaining rice, spreading it evenly.</li>
+                    </ul>
+                </li>
+                <li><strong>Dum Cooking:</strong>
+                    <ul>
+                        <li>Sprinkle saffron-soaked milk over the top layer of rice (if using).</li>
+                        <li>Cover the pot tightly with a lid or aluminum foil to seal the steam.</li>
+                        <li>Cook on low heat (dum) for 15-20 minutes or until the rice is fully cooked and aromatic.</li>
+                    </ul>
+                </li>
+                <li><strong>Serve:</strong>
+                    <ul>
+                        <li>Once done, gently fluff the rice layers with a fork.</li>
+                        <li>Serve hot chicken biryani garnished with fried onions, chopped coriander leaves, and mint leaves.</li>
+                        <li>Enjoy your delicious homemade chicken biryani with raita (yogurt dip) or salad on the side.</li>
+                    </ul>
+                </li>
+            </ol>
+            </p>
+        </div>
+    </div>
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#SignUpModal" data-bs-dismiss="modal"> Sign Up</a></p>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ShareModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Share your Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Share your Recipe</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 DilSeDelicious. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
